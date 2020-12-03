@@ -6,7 +6,6 @@ namespace CarparkApi.Util {
         public AutoMapperProfile() {
             CreateMap<User, UserModel>();
             CreateMap<RegisterModel, User>();
-            CreateMap<UpdateModel, User>();
         }
     }
 }
