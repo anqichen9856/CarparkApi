@@ -36,10 +36,9 @@ This project is built using .Net Core with MySQL.
 2. Start your local MySQL Server and initialize a database
 3. Open the project in Visual Studio by double clicking `CarparkApi.sln` in the project's root folder
 4. In Visual Studio, go to `appsettings.json`, follow the comments to edit the connection string with your local database server details  
-5. Open the terminal in the project root directory, and type the following two commands:
+5. Open the terminal in the project root directory, and type the following command:
     ```
     dotnet ef migrations add InitialCreate
-    dotnet ef database update
     ```
 6. Run the project by clicking the `Run` button at the top left corner of Visual Studio
 7. The API is now running. You can use it with a frontend by following instructions at https://github.com/anqichen9856/CarparkFrontend
