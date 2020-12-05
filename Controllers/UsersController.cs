@@ -98,26 +98,6 @@ namespace CarparkApi.Controllers {
 
         [HttpGet("carpark/{date_time}")]
         public async Task<IActionResult> GetCarparkAvailabilityAsync(string date_time) {
-            //string _apiUrl = "https://api.data.gov.sg/v1/transport/carpark-availability?";
-            //string _baseAddress = "https://api.data.gov.sg/v1/transport/carpark-availability?";
-
-            //using (var client = new HttpClient()) {
-            //    client.BaseAddress = new Uri(_baseAddress);
-            //    client.DefaultRequestHeaders.Accept.Clear();
-            //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            //    var responseMessage = await client.GetAsync(_apiUrl + "date_time=" + dateTime);
-
-            //    var response = Request.CreateResponse(HttpStatusCode.OK);
-            //    response.Content = responseMessage.Content;
-            //    return ResponseMessage(response);
-            //}
-            //using (var httpClient = new HttpClient()) {
-            //    using (var response = await httpClient.GetAsync("https://api.data.gov.sg/v1/transport/carpark-availability?date_time=" + dateTime)) {
-            //        //string apiResponse = await response.Content.ReadAsStringAsync();
-            //        //reservation = JsonConvert.DeserializeObject<Reservation>(apiResponse);
-            //        return Ok(response);
-            //    }
-            //}
             var httpClient = new HttpClient();
             var response = await httpClient.GetAsync("https://api.data.gov.sg/v1/transport/carpark-availability?date_time=" + date_time);
             var content = await response.Content.ReadAsStringAsync();
