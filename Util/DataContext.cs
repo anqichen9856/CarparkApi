@@ -11,7 +11,7 @@ namespace CarparkApi.Util {
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options) {
-            options.UseMySQL(Configuration.GetConnectionString("CarparkApiDb"));
+            options.UseMySQL(Configuration.GetConnectionString("Default"));
         }
 
         public DbSet<User> Users { get; set; }

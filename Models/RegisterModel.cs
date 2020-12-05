@@ -11,6 +11,7 @@ namespace CarparkApi.Models {
         [Required]
         public string Email { get; set; }
 
+        //optional
         public string Contact { get; set; }
 
         [Required]
