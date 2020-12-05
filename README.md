@@ -6,11 +6,11 @@ This is the backend API for a carpark availability checking system. It can be us
 
 The API supports the following functionalities:
 1. Registration
-* Mandatory fields: First name, Last name, email, password
+* Mandatory fields: First name, Last name, Email, Password
 * Optional fields: Contact number
 
 2. Login
-* Login using email/password
+* Login using email & password
 * Respond with a JWT token upon successful login
 
 3. View Member Details
@@ -21,7 +21,7 @@ The API supports the following functionalities:
 * Protected API - requires JWT token
 * Returns data from this data.gov API: https://data.gov.sg/dataset/carpark-availability
 
-This project is built using .Net Core with MySQL.
+This project is built using .Net Core 3.1 with MySQL.
 
 ## Instructions for Setting Up
 
