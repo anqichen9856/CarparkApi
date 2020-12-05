@@ -29,6 +29,7 @@ This project is built using .Net Core with MySQL.
 
 * Install MySQL Server at https://dev.mysql.com/downloads/mysql/
 * Install Visual Studio at https://visualstudio.microsoft.com/downloads/
+* Install .NET Core 3.1 SDK at https://dotnet.microsoft.com/download
 
 ### Setting Up Steps
 
