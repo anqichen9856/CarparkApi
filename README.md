@@ -34,9 +34,9 @@ This project is built using .Net Core 3.1 with MySQL.
 ### Setting Up Steps
 
 1. Download this project in Zip and decompress it
-2. Start your local MySQL Server and initialize a database
-3. Open the project in Visual Studio by double clicking `CarparkApi.sln` in the project's root folder
-4. In Visual Studio, go to `appsettings.json`, follow the comments to edit the connection string with your local database server details  
+2. Start your local MySQL Server
+3. Open the project in Visual Studio by double clicking `CarparkApi.sln` in the project root directory
+4. In Visual Studio, go to `appsettings.json`, follow the comments to update the connection string with your local MySQL server password
 5. Open the terminal in the project root directory, and type the following command:
     ```
     dotnet ef migrations add InitialCreate
